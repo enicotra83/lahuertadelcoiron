@@ -4,8 +4,8 @@
   --gris: #545454;
   --textoClaro: #fafafa;
 }
-.mobile{
-    display: none;
+.mobile {
+  display: none;
 }
 
 body {
@@ -24,9 +24,37 @@ header {
   justify-content: space-between;
 }
 
-header h1{
-    display: inline;
+header h1 {
+  display: inline;
+  font-family: 'hitch_hikeregular';
+  color: var(--amarillo);
+  font-size: 70px;
+  margin-bottom: 0px;
+}
+.btn-carrito{
+color: var(--textoClaro);
+padding: 20px;
+text-decoration: none;
+position: relative;
 
+}
+.btn-carrito span{
+    font-size: 50px;
+}
+.btn-carrito:hover {
+    color: var(--amarillo)
+}
+.precioTotal{
+    margin: -13px 0px;
+    font-size: 13px;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    *font-weight: 700;
+    color: var(--textoClaro);
+}
+.precioTotal:hover{
+    color: var(--textoClaro);
 }
 .productos {
   height: fit-content;
@@ -105,13 +133,13 @@ footer {
   font-size: 40px;
 }
 @media only screen and (max-width: 767px) {
-    .mobile{
-        display: flex;
-    }
-    .desktop{
-        display: none;
-    }
-    
+  .mobile {
+    display: flex;
+  }
+  .desktop {
+    display: none;
+  }
+
   .productos {
     display: flex;
     flex-direction: column;

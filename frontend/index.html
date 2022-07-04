@@ -41,18 +41,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./media/fonts/stylesheet.css">
     <link rel="stylesheet" href="style.css">
     <title>La Huerta del Coiron</title>
 </head>
 
 <body>
     <header>
-        <a href="/" class="desktop"><img src="./media/laHuertaLogo.jpg" class="logo" alt="logo"></a>
+        <a href="/" class="desktop"><img src="./media/laHuertaLogo.png" class="logo" alt="logo"></a>
         <a href="/" class="mobile"><img src="./media/laHuertaLogoMobile.jpg" class="logo" alt="logo"></a>
         <h1 class="desktop">La Huerta del Coiron</h1>
-        <button class="btn btn-warning"><span class="material-icons">
+        <a class="btn-carrito" id="carrito"><span class="material-icons">
             shopping_cart
-        </span></button>
+        </span> <p id="precioTotal" class="precioTotal"></p></a>
 
     </header>
     <div class="productos card-group row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
@@ -63,8 +64,8 @@
                     alt="" class="prodImg">
                 <p>Tomate mediano amarillo de textura aterciopelada</p>
                 <h4><strong>$ 500.-</strong></h4>
-                <button class="btn btn-warning"><span class="material-icons">
-                        shopping_cart
+                <button class="btn btn-warning" onClick="agregar('Wapsipinicon Peach', 500)"><span class="material-icons">
+                        add_shopping_cart
                     </span></button>
             </div>
         </div>
@@ -76,8 +77,8 @@
                 <p>Tomate pequeño dulce, apto para cultivo en macetas indoor</p>
                 <h4><strong>$ 500.-</strong></h4>
                 <button class="btn btn-warning"><span class="material-icons">
-                        shopping_cart
-                    </span></button>
+                    add_shopping_cart
+                </span></button>
             </div>
         </div>
         <div class="col">
@@ -87,8 +88,8 @@
                 <p>Tomate mediano azulado con pulpa roja</p>
                 <h4><strong>$ 500.-</strong></h4>
                 <button class="btn btn-warning"><span class="material-icons">
-                        shopping_cart
-                    </span></button>
+                    add_shopping_cart
+                </span></button>
             </div>
         </div>
         <div class="col">
@@ -99,8 +100,8 @@
                 <p>Tomate pequeño rojo en racimos, muy dulce</p>
                 <h4><strong>$ 500.-</strong></h4>
                 <button class="btn btn-warning"><span class="material-icons">
-                        shopping_cart
-                    </span></button>
+                    add_shopping_cart
+                </span></button>
             </div>
         </div>
         <a href="" target="_blank"><button class="whatsapp btn btn-warning"><span class="material-icons">
