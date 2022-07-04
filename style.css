@@ -4,6 +4,9 @@
   --gris: #545454;
   --textoClaro: #fafafa;
 }
+.mobile{
+    display: none;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -11,19 +14,30 @@ body {
   flex-direction: column;
   align-content: center;
   background-color: aliceblue;
+  position: relative;
 }
 header {
   height: 90px;
   background: var(--verde);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1{
+    display: inline;
+
 }
 .productos {
   height: fit-content;
-  margin: 10px 0px;
+  min-height: calc(100vh - 150px);
+  margin: 5px 0px;
   max-width: 1500px;
   align-self: center;
-  height: calc(100vh - 160px);
   align-content: center;
+  position: relative;
 }
+
 .btn-warning {
   background: var(--verde);
   border-color: var(--verde);
@@ -36,12 +50,25 @@ header {
 }
 .productCard {
   border: solid 1px var(--verde);
-  border-radius: 10px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   min-width: 200px;
+  max-width: 300px;
+  position: relative;
+}
+.productCard h3 {
+  text-align: center;
+}
+.productCard h4 {
+  margin-top: 16px;
+}
+
+.productCard p {
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(50, 98, 14, 0.2);
@@ -49,10 +76,17 @@ header {
 
 .prodImg {
   width: 175px;
-  border: solid 1px var(--gris);
+  aspect-ratio: 1;
+  object-fit: cover;
   margin: 5px;
 }
-
+.productCard button {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  padding-top: 12px;
+  border-radius: 30px;
+}
 footer {
   background: var(--gris);
   color: var(--textoClaro);
@@ -60,14 +94,32 @@ footer {
   text-align: center;
   padding: 0.75rem 0px;
 }
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding-top: 12px;
+  border-radius: 40px;
+}
+.whatsapp span {
+  font-size: 40px;
+}
 @media only screen and (max-width: 767px) {
-  .col {
-    max-width: 90vw;
-  }
+    .mobile{
+        display: flex;
+    }
+    .desktop{
+        display: none;
+    }
+    
   .productos {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: fit-content;
+    width: 90%;
+  }
+  .col {
+    max-width: 300px;
   }
 }

@@ -1,0 +1,7 @@
+30/06 
+se da inicio al proyecto y se sube a github
+se generan header, cards, footer y botones
+4/7
+se modifican img de card para que mantengan relacion de aspecto
+se agrega boton de whatsapp fixed
+se termina de diseñar cards de productos
