@@ -1,0 +1,23 @@
+{
+  "name": "huertadelcoiron",
+  "version": "1.0.0",
+  "description": "web store",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enicotra83/lahuertadelcoiron.git"
+  },
+  "author": "enicotra83@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enicotra83/lahuertadelcoiron/issues"
+  },
+  "homepage": "https://github.com/enicotra83/lahuertadelcoiron#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
