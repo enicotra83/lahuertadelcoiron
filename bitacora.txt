@@ -5,3 +5,7 @@ se generan header, cards, footer y botones
 se modifican img de card para que mantengan relacion de aspecto
 se agrega boton de whatsapp fixed
 se termina de diseñar cards de productos
+6/7
+se agrega backend con express
+7/7
+se agrega control de stock desde backend
