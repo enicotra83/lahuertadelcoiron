@@ -11,10 +11,15 @@ divCarrito.addEventListener('click', () => {
 
 //cuando arranque la app en el index, que me haga un fetch de los productos - despues de iniciar el back
 window.onload = async () => {
+    await fetchProductos()
   //console.log('fetch')
-  productList = await (await fetch('/api/productos')).json()
   console.log(productList)
-  displayProductos()
+}
+
+//si hay error se hace un fetch y se redibuja la pagina
+async function fetchProductos(){
+    productList = await (await fetch('/api/productos')).json()
+    displayProductos()
 }
 
 let agregar = (productoId, precio) => {
@@ -34,7 +39,6 @@ const displayProductos = () => {
  add_shopping_cart</span></button>`
     if (p.stock <= 0) {
       buttonHTML = `<button  disabled class="btn btn-warning" onClick="agregar('${p.id}', ${p.price})"><span class="material-icons">compost</span></button>`
-     
     }
     productHTML += `<div class="col">
         <div class="productCard card h-100">
@@ -51,16 +55,24 @@ const displayProductos = () => {
   containerProductos.innerHTML = productHTML
 }
 async function verCarrito() {
-  const productList = await (
-    await fetch('/api/pagar', {
-      method: 'post',
-      body: JSON.stringify(carrito),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-  ).json()
-
+  try {
+    const productList = await (
+      await fetch('/api/pagar', {
+        method: 'post',
+        body: JSON.stringify(carrito),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+    ).json()
+  }
+  catch {
+    window.alert('Sin Stock')
+  }
+  carrito = []
+  total = 0
+  precioTotal.innerHTML = ``
+  await fetchProductos()
   //alert(productosCarrito.join(", \n"))
   //console.log(productos)
   //console.log(total)

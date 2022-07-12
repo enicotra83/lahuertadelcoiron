@@ -9,3 +9,5 @@ se termina de diseñar cards de productos
 se agrega backend con express
 7/7
 se agrega control de stock desde backend
+11/7
+se configura BD de productos desde Google Spreadsheets, se configuran permisos y credenciales desde cloud Google, se configura backend para descontar productos en stock de spreadsheet.
