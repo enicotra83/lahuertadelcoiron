@@ -10,7 +10,7 @@ const port = 3000
 //   res.send('Hello World!')
 // })
 // para traer los productos desde el google Sheets
-const repository = require('./repository')
+const repository = require('./archivosDeConfiguracion/repository')
 
 // para leer el post de pagar como json
 app.use(express.json())
