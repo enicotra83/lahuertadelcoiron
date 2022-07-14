@@ -11,3 +11,6 @@ se agrega backend con express
 se agrega control de stock desde backend
 11/7
 se configura BD de productos desde Google Spreadsheets, se configuran permisos y credenciales desde cloud Google, se configura backend para descontar productos en stock de spreadsheet.
+12/7
+se modifica acceso a Spreadsheets. se da inicio a firebase para hosting y se empieza a trabajar en el deploy de toda la pagina
+

@@ -4,7 +4,7 @@ const express = require('express')
 // inicializa la aplicacion
 const app = express()
 //el puerto en el que se va a iniciar
-const port = 3000
+const port = process.env.PORT || 3000;
 // mensaje de prueba: cuando la app hace un get del / retorna Hello World
 // app.get('/', (req, res) => {
 //   res.send('Hello World!')
