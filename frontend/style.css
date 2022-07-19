@@ -31,32 +31,32 @@ header h1 {
   font-size: 70px;
   margin-bottom: 0px;
 }
-.btn-carrito{
-color: var(--textoClaro);
-padding: 20px;
-text-decoration: none;
-position: relative;
-
+.btn-carrito {
+  color: var(--textoClaro);
+  padding: 20px;
+  text-decoration: none;
+  position: relative;
 }
-.btn-carrito span{
-    font-size: 50px;
+.btn-carrito span {
+  font-size: 50px;
+  cursor: pointer;
 }
 .btn-carrito:hover {
-    color: var(--amarillo)
+  color: var(--amarillo);
 }
-.precioTotal{
-    margin: -13px 0px;
-    font-size: 13px;
-    position: absolute;
-    bottom: 25px;
-    right: 20px;
-    *font-weight: 700;
-    color: var(--textoClaro);
+.precioTotal {
+  margin: -13px 0px;
+  font-size: 13px;
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  *font-weight: 700;
+  color: var(--textoClaro);
 }
-.precioTotal:hover{
-    color: var(--textoClaro);
+.precioTotal:hover {
+  color: var(--textoClaro);
 }
-#global{
+#global {
   min-width: 90vw;
   min-height: 80vh;
 }
@@ -153,4 +153,34 @@ footer {
   .col {
     max-width: 300px;
   }
+}
+.mercadopago-button {
+  background: var(--verde) !important;
+}
+.orden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.orden h1 {
+  font-family: 'hitch_hikeregular';
+  color: var(--verde);
+  font-size: 4.5rem;
+}
+.ordenTable {
+  min-width: 55%;
+  margin: 1.5rem 0px;
+  text-align: center;
+  border-bottom: 1px solid var(--verde);
+}
+th {
+  color: var(--verde);
+  padding-bottom: 1rem;
+}
+td {
+  padding-bottom: 0.5rem;
+}
+
+.orden h2 {
+  color: var(--verde);
 }

@@ -71,6 +71,7 @@ async function verCarrito() {
       'https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js'
     script.type = 'text/javascript'
     script.dataset.preferenceId = preference.preferenceId
+    script.setAttribute("data-button-label", "Pagar con Mercado Pago")
     document.getElementById('global').innerHTML = ''
     document.querySelector('#global').appendChild(script)
   } catch {
