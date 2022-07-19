@@ -50,7 +50,7 @@
         <a href="/" class="desktop"><img src="./media/laHuertaLogo.png" class="logo" alt="logo"></a>
         <a href="/" class="mobile"><img src="./media/laHuertaLogoMobile.jpg" class="logo" alt="logo"></a>
         <h1 class="desktop">La Huerta del Coiron</h1>
-        <a class="btn-carrito" id="carrito"><span class="material-icons">
+        <a class="btn-carrito" id="verCarrito"><span class="material-icons">
                 shopping_cart
             </span>
             <p id="precioTotal" class="precioTotal"></p>
@@ -73,31 +73,15 @@
             </div>
         </div> -->
         </div>
-        <div class="orden">
+        <div class="orden" id="orden">
             <h1>Mi Pedido</h1>
-            <table class="ordenTable">
-                <tr>
-                    <th>Cantidad</th>
-                    <th>Detalle</th>
-                    <th> </th>
-                    <th>Subtotal</th>
-                </tr>
-                <tr>
-                    <td >2</td>
-                    <td>tomate</td>
-                    <td>$</td>
-                    <td>1000</td>
-                </tr>
-                <tr>
-                    <td >1</td>
-                    <td>tomate Wapsipinicon Peach</td>
-                    <td>$</td>
-                    <td>500</td>
-                </tr>
-
+            <table class="ordenTable" id="ordenTable">
             </table>
-            <h2>Total: $ 1500 </h2>
-
+            <h2 id="btnTotal"></h2>
+            <div class="ordenAcciones">
+                <p id="btnVolver"> <<  Volver</p>
+                <p id="carrito" >Confirmar  >> </p>
+            </div>
         </div>
     </div>
     <a href="" target="_blank"><button class="whatsapp btn btn-warning"><span class="material-icons">

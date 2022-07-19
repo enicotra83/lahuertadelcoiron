@@ -135,6 +135,50 @@ footer {
 .whatsapp span {
   font-size: 40px;
 }
+
+.mercadopago-button {
+  background: var(--verde) !important;
+  margin: 0 auto !important;
+}
+.orden {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.orden h1 {
+  font-family: 'hitch_hikeregular';
+  color: var(--verde);
+  font-size: 4.5rem;
+  margin-top: 2rem;
+}
+.ordenTable {
+  min-width: 55%;
+  margin: 1.5rem 0px;
+  text-align: center;
+  border-bottom: 1px solid var(--verde);
+}
+th {
+  color: var(--verde);
+  padding-bottom: 1rem;
+}
+td {
+  padding-bottom: 0.5rem;
+}
+
+.orden h2 {
+  color: var(--verde);
+}
+.ordenAcciones {
+  display: flex;
+  justify-content: center;
+}
+.ordenAcciones p {
+  padding: 20px 10px;
+}
+.ordenAcciones p:hover {
+  cursor: pointer;
+  color: var(--amarillo);
+}
 @media only screen and (max-width: 767px) {
   .mobile {
     display: flex;
@@ -153,34 +197,4 @@ footer {
   .col {
     max-width: 300px;
   }
-}
-.mercadopago-button {
-  background: var(--verde) !important;
-}
-.orden {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.orden h1 {
-  font-family: 'hitch_hikeregular';
-  color: var(--verde);
-  font-size: 4.5rem;
-}
-.ordenTable {
-  min-width: 55%;
-  margin: 1.5rem 0px;
-  text-align: center;
-  border-bottom: 1px solid var(--verde);
-}
-th {
-  color: var(--verde);
-  padding-bottom: 1rem;
-}
-td {
-  padding-bottom: 0.5rem;
-}
-
-.orden h2 {
-  color: var(--verde);
 }
