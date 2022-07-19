@@ -11,15 +11,15 @@ divCarrito.addEventListener('click', () => {
 
 //cuando arranque la app en el index, que me haga un fetch de los productos - despues de iniciar el back
 window.onload = async () => {
-    await fetchProductos()
+  await fetchProductos()
   //console.log('fetch')
   console.log(productList)
 }
 
 //si hay error se hace un fetch y se redibuja la pagina
-async function fetchProductos(){
-    productList = await (await fetch('/api/productos')).json()
-    displayProductos()
+async function fetchProductos() {
+  productList = await (await fetch('/api/productos')).json()
+  displayProductos()
 }
 
 let agregar = (productoId, precio) => {
@@ -56,7 +56,7 @@ const displayProductos = () => {
 }
 async function verCarrito() {
   try {
-    const productList = await (
+    const preference = await (
       await fetch('/api/pagar', {
         method: 'post',
         body: JSON.stringify(carrito),
@@ -65,14 +65,21 @@ async function verCarrito() {
         },
       })
     ).json()
-  }
-  catch {
+
+    var script = document.createElement('script')
+    script.src =
+      'https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js'
+    script.type = 'text/javascript'
+    script.dataset.preferenceId = preference.preferenceId
+    document.getElementById('global').innerHTML = ''
+    document.querySelector('#global').appendChild(script)
+  } catch {
     window.alert('Sin Stock')
   }
   carrito = []
   total = 0
   precioTotal.innerHTML = ``
-  await fetchProductos()
+  //await fetchProductos()
   //alert(productosCarrito.join(", \n"))
   //console.log(productos)
   //console.log(total)
