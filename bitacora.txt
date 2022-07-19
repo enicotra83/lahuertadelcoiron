@@ -13,4 +13,9 @@ se agrega control de stock desde backend
 se configura BD de productos desde Google Spreadsheets, se configuran permisos y credenciales desde cloud Google, se configura backend para descontar productos en stock de spreadsheet.
 12/7
 se modifica acceso a Spreadsheets. se da inicio a firebase para hosting y se empieza a trabajar en el deploy de toda la pagina
-
+14/7
+se deploya a heroku
+18/7 
+se empieza a trabajar con la integracion a mercado pago
+19/7 
+se incorpora mercadopago en el front

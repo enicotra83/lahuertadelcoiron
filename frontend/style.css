@@ -56,6 +56,10 @@ position: relative;
 .precioTotal:hover{
     color: var(--textoClaro);
 }
+#global{
+  min-width: 90vw;
+  min-height: 80vh;
+}
 .productos {
   height: fit-content;
   min-height: calc(100vh - 150px);

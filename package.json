@@ -19,6 +19,7 @@
   "homepage": "https://github.com/enicotra83/lahuertadelcoiron#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "googleapis": "^105.0.0"
+    "googleapis": "^105.0.0",
+    "mercadopago": "^1.5.14"
   }
 }
