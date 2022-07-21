@@ -75,22 +75,53 @@
         </div>
         <div class="orden" id="orden">
             <h1>Mi Pedido</h1>
+            <h2 id="btnTotal"></h2>
+
             <table class="ordenTable" id="ordenTable">
             </table>
-            <h2 id="btnTotal"></h2>
-            <div class="ordenAcciones">
-                <p id="btnVolver"> <<  Volver</p>
-                <p id="carrito" >Confirmar  >> </p>
+            <div class="ordenEnvio" id="ordenEnvio">
+                <div class="row bg_3">
+                    <h2>Datos de Envio</h2>
+                    <div class="col-3 input-effect">
+                        <input class="effect-16" type="text" placeholder="" id="nombre">
+                        <label>Nombre Completo</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="col-3 input-effect">
+                        <input class="effect-16" type="email" placeholder="" id="email">
+                        <label>Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="col-3 input-effect">
+                        <input class="effect-16" type="text" placeholder="" id="direccion1">
+                        <label>Direccion (calle y número)</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="col-3 input-effect">
+                        <input class="effect-16" type="text" placeholder="" id="ciudad">
+                        <label>Ciudad</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="col-3 input-effect">
+                        <input class="effect-16" type="text" placeholder="" id="horario">
+                        <label>Franja horaria</label>
+                        <span class="focus-border"></span>
+                    </div>
+                </div>
+                <div class="ordenAcciones">
+                    <p id="btnVolver">
+                        << Volver</p>
+                            <p id="carrito">Confirmar >> </p>
+                </div>
             </div>
         </div>
-    </div>
-    <a href="" target="_blank"><button class="whatsapp btn btn-warning"><span class="material-icons">
-                whatsapp
-            </span></button></a>
-    <footer>
-        Te damos la bienvenida al loco mundo de las huertas domésticas
-    </footer>
-    <script src="./main.js"></script>
+        <a href="" target="_blank"><button class="whatsapp btn btn-warning"><span class="material-icons">
+                    whatsapp
+                </span></button></a>
+        <footer>
+            Te damos la bienvenida al loco mundo de las huertas domésticas
+        </footer>
+        <script src="./main.js"></script>
 </body>
 
 </html>
